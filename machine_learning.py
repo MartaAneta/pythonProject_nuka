@@ -1,5 +1,7 @@
 import numpy
 import stats as stats
+import numpy
+import matplotlib.pyplot as plt
 
 speed = [99,86,87,88,111,86,103,87,94,78,77,85,86]
 speed1 = [99,86,87,88,86,103,87,94,78,77,85,86]
@@ -22,3 +24,10 @@ print(x)
 print(x1)
 print(z)
 print(y)
+x6 = numpy.random.uniform(0.0, 5.0, 250)
+
+plt.hist(x6, 5)
+x7 = numpy.random.uniform(0.0, 5.0, 100000)
+
+plt.hist(x7, 100)
+plt.show()
